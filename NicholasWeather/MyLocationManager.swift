@@ -60,25 +60,6 @@ class MyLocationManager : NSObject, ObservableObject, CLLocationManagerDelegate 
             print("default")
         }
     }
-    /*
-    func searchLocation(for name: String) {
-        print(name)
-        let request = MKLocalSearch.Request()
-        request.naturalLanguageQuery = name
-        region.center = self.location.coordinate // search around the user's current location
-        request.region = region
-        
-        let search = MKLocalSearch(request: request)
-        search.start { response, error in
-            guard let res = response else {
-                print("error location not found")
-                return
-            }
-            print(res.mapItems.count)
-            self.mapItems = res.mapItems
-        }
-    }
-    */
     
     let baseUrlStr = "https://api.weatherapi.com/v1/current.json?key=7ec9ca3cd0304e50bfd203630241311"
     
